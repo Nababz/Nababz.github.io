@@ -11,7 +11,7 @@ body {
   color: black;
   margin-left: auto;
   margin-right: auto;
-  width: 35%;
+  width: 37%
 }
 
 a {
@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0 20px 0;
+  margin: 30px 30px 20px 30px;
 }
 
 #logo-header {
@@ -67,20 +67,20 @@ header > a {
 
 #site-title {
   font-size: 15px;
-  margin: 0 0 5px 0;
+  margin: 0 30px 5px 30px;
 }
 
 #subtitle {
   font-size: 11px;
   font-weight: 500;
-  margin: 0 0 15px 0;
+  margin: 0 30px 15px 30px;
 }
 
 /* Moteur de recherche par villes */
 
 #search-engine {
   display: flex;
-  margin: 0 0 10px 0;
+  margin: 0 30px 10px 30px;
 }
 
 #icon-localisation {
@@ -130,6 +130,7 @@ header > a {
 #filter {
   display: flex;
   align-items: center;
+  margin: 0 30px 0 30px;
 }
 
 #filter p {
@@ -146,8 +147,8 @@ header > a {
 
 .search-filter button {
   background-color: white;
-  height: 30px;
-  padding: 0 10px 0 20px;
+  height: 35px;
+  padding: 0 15px 0 20px;
   font-weight: 600;
   font-size: 11px;
   border: 2px solid #f2f2f2;
@@ -162,14 +163,15 @@ header > a {
 .search-filter i {
   display: flex;
   position: relative;
-  left: 9px;
-  width: 10px;
-  height: 10px;
-  font-size: 11px;
+  left: 13px;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
   justify-content: center;
+  align-items: center;
   color: #0065fc;
   background-color: #deebff;
-  padding: 10px;
+  padding: 7px;
   border-radius: 50%;
 }
 
@@ -180,10 +182,8 @@ header > a {
   border: solid #f2f2f2 2px;
   font-size: 8px;
   padding: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 20px 0 0;
+  text-align: center;
+  margin: 0 30px 0 30px;
   border-radius: 50%;
   height: 8px;
   width: 8px;
@@ -192,7 +192,7 @@ header > a {
 #accommodation-available {
   display: flex;
   align-items: center;
-  margin: 0 0 10px 10px;
+  margin: 0 0 10px 0;
 }
 
 #accommodation-available p {
@@ -204,7 +204,7 @@ header > a {
 
 .section-title {
   width: 100%;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   padding: 15px;
   margin: 15px 0 10px 15px;
@@ -214,13 +214,14 @@ header > a {
 
 #accommodation-global {
   display: flex;
+  margin: 0 30px 0 30px;
 }
 
 #accommodation-marseille {
   display: flex;
   flex-wrap: wrap;
   background-color: #f2f2f2;
-  width: 65%;
+  width: 60%;
   height: 420px;
   border-radius: 15px;
   align-items: center;
@@ -301,7 +302,7 @@ header > a {
   margin-left: 30px;
   background-color: #f2f2f2;
   border-radius: 15px;
-  width: 30%;
+  width: 34%;
   height: 420px;
   align-items: center;
   justify-items: center;
@@ -312,13 +313,13 @@ header > a {
   height: 30px;
   align-items: center;
   justify-content: center;
-  padding: 20px 15px 0 0;
+  padding: 20px 20px 0 15px;
   margin: 0 0 10px 0;
 }
 
 #title-popular {
   width: 100%;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   padding: 15px;
 }
@@ -337,7 +338,7 @@ header > a {
 #list-accommodation-popular img {
   height: 95px;
   width: 85px;
-  padding: 4%;
+  padding: 3%;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
 }
@@ -359,7 +360,7 @@ header > a {
 
 #activity-title {
   width: 100%;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   margin: 20px 0 15px 0;
   padding: 15px 0 0 0;
@@ -369,14 +370,13 @@ header > a {
   display: flex;
   flex-wrap: wrap;
   height: 370px;
-  margin: 0px 0 20px 0;
+  margin: 0px 20px 35px 30px;
 }
 
 #activity-marseille > div {
   border-radius: 15px;
-  width: 197px;
-  height: 285px;
-  margin: 0 25px 0 0;
+  height: 295px;
+  margin: 0 26px 0 0;
 }
 
 #activity-marseille img {
@@ -393,41 +393,39 @@ header > a {
 
 .activity-single {
   box-shadow: 0px 0px 0px 2px #f2f2f2;
+  width: 196px;
 }
 
 .activity-single img {
-  height: 250px;
+  height: 260px;
   border-radius: 15px 15px 0 0;
 }
 
 .activity-double {
   border-radius: 15px;
+  width: 196px;
 }
 
 .activity-medium {
   margin: 0 0 20px 0;
   box-shadow: 0px 0px 0px 2px #f2f2f2;
   border-radius: 15px;
-  height: 150px;
+  height: 140px;
 }
 
 .activity-medium img {
-  height: 115px;
+  height: 105px;
 }
 
 .activity-small {
   margin: 0 0 20px 0;
   border-radius: 15px;
-  height: 115px;
+  height: 125px;
   box-shadow: 0px 0px 0px 2px #f2f2f2;
 }
 
 .activity-small img {
-  height: 80px;
-}
-
-#activity-double-right {
-  margin-right: unset;
+  height: 90px;
 }
 
 /* Pied de page */
