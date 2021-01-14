@@ -11,7 +11,7 @@ body {
   color: black;
   margin-left: auto;
   margin-right: auto;
-  width: 37%
+  width: 37%;
 }
 
 a {
@@ -352,9 +352,8 @@ header > a {
 
 .rating-popular {
   padding: 0 0 0 15px;
-  margin:  20px 0 0 0;
+  margin: 20px 0 0 0;
 }
-
 
 /* Activités à Marseille */
 
@@ -455,10 +454,9 @@ footer div {
 
 /* Media Queries Téléphone */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   body {
-    margin: auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -469,11 +467,16 @@ footer div {
     display: flex;
     width: 400px;
     font-size: 10px;
+    height: 35px;
   }
 
   #logo-header {
     height: 35px;
     width: 75px;
+  }
+
+  header > a {
+    display: contents;
   }
 
   .register {
@@ -483,7 +486,7 @@ footer div {
   #nav-mobile {
     display: flex;
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
   }
 
   .nav-link {
@@ -508,6 +511,7 @@ footer div {
 
   #site-title {
     font-size: 20px;
+    margin: 0 30px 10px 30px;
   }
 
   #subtitle {
@@ -540,12 +544,12 @@ footer div {
   #filter {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 0 0 0;
+    margin: 10px 30px 0 15px;
   }
 
   #filter p {
     width: 100%;
-    margin: 10px 0 5px 0;
+    margin: 10px 30px 10px 15px;
     font-size: 13px;
   }
 
@@ -554,7 +558,7 @@ footer div {
   }
 
   #button-pet {
-    width: 130px;
+    width: 150px;
   }
 
   /* Hébergements populaires */
@@ -562,6 +566,7 @@ footer div {
   #accommodation-global {
     display: flex;
     flex-flow: wrap-reverse;
+    margin: 0;
   }
 
   #list-accommodation-popular {
@@ -574,6 +579,7 @@ footer div {
     display: flex;
     margin: 0 0 10px 0;
     align-items: center;
+    padding: 20px 15px 5px 0;
   }
 
   .accommodation1 {
@@ -582,39 +588,40 @@ footer div {
   }
 
   #list-accommodation-popular img {
-    width: 100px;
+    width: 110px;
+    padding: 2%;
   }
 
-  .accommodation1 div {
-    margin: 5px 0 0 20px;
+  .text-popular {
+    padding: 10px 0 0 10px;
   }
 
   /* Hébergements à Marseille */
 
   .section-title {
-    margin: 25px 0 15px 0;
+    margin: 25px 0 20px 0;
     padding: 0;
   }
 
   #accommodation-marseille {
     width: 100%;
-    height: 980px;
+    height: 1130px;
     display: block;
     flex-wrap: wrap;
-    margin: 0 0 20px 0;
+    margin: 0 30px;
     background-color: white;
   }
 
   .accommodation {
     display: block;
-    margin: 10px 0;
+    margin: 5px 0;
     width: 100%;
-    height: 140px;
+    height: 170px;
     box-shadow: -1px 1px 5px 3px #f2f2f2;
   }
 
   #accommodation-marseille img {
-    height: 80px;
+    height: 100px;
     padding: 2%;
     width: 96%;
   }
@@ -622,7 +629,8 @@ footer div {
   /* Activités à Marseille  */
 
   #activity-marseille {
-    height: 900px;
+    height: 930px;
+    margin: 0 30px 30px 30px;
   }
 
   #activity-title {
@@ -631,63 +639,163 @@ footer div {
 
   #activity-marseille div {
     width: 100%;
+    margin: 0;
   }
 
   #activity-marseille > .activity-double > .activity-mobile {
     height: 120px;
-    width: 300px;
+    margin: 15px 0;
   }
 
   #activity-marseille > .activity-mobile {
     height: 120px;
-    width: 300px;
+    margin: 15px 0;
   }
 
   .activity-mobile img {
-    height: 80px;
+    height: 85px;
   }
 
   /* Footer */
 
   footer {
-    height: 270px;
-    margin: 0 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 380px;
   }
 
   footer div {
     width: 100%;
+    height: 110px;
+    margin: 0;
   }
 }
 
+/* Media queries tablettes portrait */
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   body {
-    width: 90%;
+    width: 95%;
+    margin: 0 10px;
+  }
+
+  /* Liste des hébergements populaires */
+
+  #accommodation-global {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  #list-accommodation-popular {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 25px 0;
+    height: 180px;
+    justify-content: center;
+  }
+
+  #section-title-popular {
+    width: 100%;
+    height: 20px;
+    margin: 10px 0 0 0;
+    padding: 0px 10px;
+  }
+
+  .accommodation1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+    margin: 5px;
+  }
+
+  .text-popular {
+    display: flex;
+    flex-flow: wrap column;
+    width: 105px;
+    padding: 5px 0 0 0;
+    line-height: 11px;
   }
 
   .accommodation-name {
     font-size: 9px;
-    width: 110px;
+  }
+
+  .rating-popular {
+    padding: 15px 0 10px 15px;
+    margin: 0;
+  }
+
+  /* Hébergements à Marseille */
+
+  #accommodation-marseille {
+    width: 100%;
   }
 
   .accommodation {
-    width: 28%;
+    width: 200px;
   }
+
+  /* Liste des activités */
 
   #activity-marseille {
-    height: 450px;
+    height: 550px;
+    width: 100%;
   }
 
-  .activity-tablet {
-    height: 120px;
+  #activity-marseille > div {
+    width: 209px;
+    margin: 0 20px 0 0;
   }
 
-  .activity-tablet img {
+  #activity-marseille > .activity-double-tablet {
+    display: flex;
+    flex-flow: wrap row;
+    width: 680px;
+    margin: 15px 0 0 0;
+  }
+
+  #activity-marseille > .activity-double > .activity-tablet {
+    height: 160px;
+    width: 320px;
+    margin: 0 10px;
+  }
+
+  #activity-marseille > .activity-double > .activity-tablet img {
     height: 120px;
   }
 }
 
+/* Media queries tablettes paysage */
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   body {
     width: 90%;
+  }
+
+  /* Modification de la taille des activités */
+
+  .activity-small {
+    height: 125px;
+  }
+
+  .activity-small img {
+    height: 90px;
+  }
+
+  .activity-medium {
+    height: 150px;
+  }
+
+  .activity-medium img {
+    height: 115px;
+  }
+
+  .activity-single {
+    width: 190px;
+  }
+
+  .activity-double {
+    width: 190px;
   }
 }
