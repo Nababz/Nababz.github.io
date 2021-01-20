@@ -862,7 +862,6 @@ footer div {
   }
 
   #activity-marseille {
-    height: 550px;
     width: 94%;
   }
 
@@ -874,14 +873,12 @@ footer div {
   #activity-marseille > .activity-double-tablet {
     display: flex;
     flex-flow: row;
-    width: 100%;
+    width: 106%;
     margin: 15px 0 0 0;
   }
 
   #activity-marseille > .activity-double > .activity-tablet {
-    height: 160px;
-    width: 50%;
-    margin: 0 25px 0 0;
+    margin: 0 15px 0 0;
   }
 
   #activity-marseille > .activity-double > .activity-tablet img {
