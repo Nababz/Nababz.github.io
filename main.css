@@ -237,7 +237,7 @@ nav li {
   justify-content: center;
   position: relative;
   bottom: 20px;
-  margin: 0 10px;
+  margin: 0 0px;
 }
 
 #accommodation-marseille img {
@@ -478,7 +478,7 @@ footer div {
 
 /* Media Queries Téléphone */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+@media only screen and (width > 320px) and (width < 667px) {
   body {
     width: 100%;
     display: flex;
@@ -503,9 +503,9 @@ footer div {
     width: 100%;
     margin: 15px 0;
     padding: 0;
-    text-align: center
+    text-align: center;
   }
-  
+
   #logo-header {
     margin: 0 0 0 30px;
     height: 35px;
@@ -520,7 +520,7 @@ footer div {
   nav ul {
     margin: 0;
     padding: 0;
-    width: 100%
+    width: 100%;
   }
 
   nav li {
@@ -651,8 +651,8 @@ footer div {
   }
 
   .accommodation1 {
-    width: 83%;
-    margin: 10px 30px;
+    width: 89%;
+    margin: 10px 20px;
   }
 
   #list-accommodation-popular img {
@@ -777,7 +777,7 @@ footer div {
 
 /* Media queries tablettes portrait */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width < 1024px) and (orientation: portrait) {
   body {
     width: 100%;
     margin: 0px;
@@ -888,12 +888,10 @@ footer div {
 
 /* Media queries tablettes paysage */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width < 1024px) and (orientation: landscape) {
   body {
     width: 100%;
   }
-
-
 
   /* Modification de la taille des activités */
 
