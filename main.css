@@ -1,4 +1,4 @@
-/* changement de police */
+/* Changement de police */
 
 @font-face {
   font-family: "Raleway";
@@ -478,7 +478,7 @@ footer div {
 
 /* Media Queries Téléphone */
 
-@media only screen and (width > 320px) and (width < 667px) {
+@media only screen and (max-width: 667px) {
   body {
     width: 100%;
     display: flex;
@@ -777,7 +777,7 @@ footer div {
 
 /* Media queries tablettes portrait */
 
-@media only screen and (width >= 768px) and (width < 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   body {
     width: 100%;
     margin: 0px;
@@ -888,7 +888,7 @@ footer div {
 
 /* Media queries tablettes paysage */
 
-@media only screen and (width >= 768px) and (width < 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   body {
     width: 100%;
   }
