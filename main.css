@@ -349,8 +349,8 @@ nav li {
 .text-popular {
   display: flex;
   flex-flow: wrap column;
-  width: 120px;
-  padding: 10px 0 0 5px;
+  width: 50%;
+  padding: 5% 0 0 2%;
 }
 
 .rating-popular {
@@ -478,11 +478,13 @@ footer div {
 
 /* Media Queries Téléphone */
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 666px) {
   body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    max-width: 398px; 
   }
 
   /* Header et menu de navigation */
@@ -492,6 +494,7 @@ footer div {
     flex-wrap: wrap;
     font-size: 10px;
     margin: 10px 0;
+    
   }
 
   header a {
@@ -777,16 +780,17 @@ footer div {
 
 /* Media queries tablettes portrait */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 667px) and (max-width: 1023px){
   body {
     width: 100%;
-    margin: 0px;
+    max-width: 860px;
+    margin: auto;
   }
 
   /* Menu de navigation */
 
   nav ul {
-    margin: 0 0 0 280px;
+    margin: 0 0 0 40%;
   }
 
   #nav-browser {
@@ -820,16 +824,17 @@ footer div {
   .accommodation1 {
     display: flex;
     flex-wrap: wrap;
-    width: 210px;
+    width: 90%;
     margin: 5px;
   }
 
   .text-popular {
     display: flex;
-    flex-flow: wrap column;
-    width: 105px;
-    padding: 5px 0 0 0;
+    flex-direction: column;
+    width: 50%;
+    padding: 5% 0 0 0;
     line-height: 11px;
+    margin: 0;
   }
 
   .accommodation-name {
@@ -886,20 +891,59 @@ footer div {
   }
 }
 
-/* Media queries tablettes paysage */
+/* Media query tablettes */
+@media only screen and (min-width: 667px) and (max-width: 771px){
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  body {
+  #list-accommodation-popular img {
+    height: 95px;
+    width: 65px;
+    padding: 3%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .accommodation1 {
+    width: 190px;
+  }
+
+  #list-accommodation-popular {
     width: 100%;
+    margin: 0;
+    border-radius: 0;
   }
 
-  /* Modification de la taille des activités */
-
-  .activity-single {
-    width: 22%;
+  #section-title-popular {
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
   }
 
-  .activity-double {
-    width: 22%;
+  .text-popular {
+    width: 110px;
   }
+  
+  /* Liste des activités */
+
+   #activity-marseille > div {
+    width: 46%;
+    margin: 0 16px 15px 0;
+  }
+
+   #activity-marseille > .activity-double-tablet {
+    display: flex;
+    flex-flow: column;
+    width: 46%;
+    margin: 0px 0 0 0;
+  }
+
+  #activity-marseille > .activity-double > .activity-tablet  {
+    margin-bottom: 15px ;
+  }
+
+  #activity-marseille > .activity-double > .activity-tablet img {
+    height: 110px;
+  }
+
+
 }
+
