@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <title>Reservia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../icons/all.css" />
   </head>
   <body>
     <!-- Header avec menu de navigation -->
     <header>
       <!-- logo Reservia -->
-      <img id="logo-header" src="logo/Reservia@3x.png" alt="Logo Reservia" />
+      <img id="logo-header" src="../images/logo/Reservia@3x.png" alt="Logo Reservia" />
 
       <!-- Menu de navigation -->
       <nav id="nav-browser">
@@ -84,13 +84,13 @@
     <!-- Exemples de logements -->
     <main id="accommodation-global">
       <!-- Logements à Marseille -->
-      <div id="accommodation-marseille">
+      <section id="accommodation-marseille">
         <h2 class="section-title">Hébergements à Marseille</h2>
         <div id="list-accommodation-marseille">
           <div class="accommodation">
             <a href="">
               <img
-                src="hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                src="../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                 alt="Photo de l'Auberge de la Cannebiere"
               />
               <p class="accommodation-name">Auberge La Cannebiere</p>
@@ -110,7 +110,7 @@
           <div class="accommodation">
             <a href="">
               <img
-                src="hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                src="../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 alt="Photo de l'Hôtel du port"
               />
               <p class="accommodation-name">Hôtel du port</p>
@@ -130,7 +130,7 @@
           <div class="accommodation">
             <a href="">
               <img
-                src="hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                src="../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                 alt="Photo de l'Hôtel Les mouettes"
               />
               <p class="accommodation-name">Hôtel Les mouettes</p>
@@ -150,7 +150,7 @@
           <div class="accommodation">
             <a href="">
               <img
-                src="hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                src="../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                 alt="Photo de l'Hôtel de la mer"
               />
               <p class="accommodation-name">Hôtel de la mer</p>
@@ -170,7 +170,7 @@
           <div class="accommodation">
             <a href="">
               <img
-                src="hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                src="../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                 alt="Photo de l'Auberge Le Panier"
               />
               <p class="accommodation-name">Auberge Le Panier</p>
@@ -190,7 +190,7 @@
           <div class="accommodation">
             <a href="">
               <img
-                src="hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                src="../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                 alt="Photo de l'Hôtel chez Amina"
               />
               <p class="accommodation-name">Hôtel chez Amina</p>
@@ -206,12 +206,12 @@
               </div>
             </a>
           </div>
-        </div>
-        <a href="" id="show-more">Afficher plus</a>
+          <a href="" id="show-more">Afficher plus</a>
+        </section>
       </div>
 
       <!-- Logements populaires -->
-      <div id="list-accommodation-popular">
+      <aside id="list-accommodation-popular">
         <div id="section-title-popular">
           <h2 id="title-popular">Les plus populaires</h2>
           <i class="fas fa-chart-line" id="icon-popular"></i>
@@ -220,7 +220,7 @@
           <div class="accommodation1">
             <span>
               <img
-                src="hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                src="../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                 alt="Photo de l'Hôtel Le soleil du matin"
               />
             </span>
@@ -244,7 +244,7 @@
           <div class="accommodation1">
             <span>
               <img
-                src="hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                src="../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                 alt="Photo de la chambre d'hôtes Au coeur de l'eau"
               />
             </span>
@@ -271,7 +271,7 @@
           <div class="accommodation1">
             <span>
               <img
-                src="hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                src="../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                 alt="Photo de l'Hôtel Tout bleu et Blanc"
               />
             </span>
@@ -291,18 +291,18 @@
             </div>
           </div>
         </a>
-      </div>
+      </aside>
     </main>
 
     <!-- Activités à Marseille -->
-    <aside id="activity-marseille">
+    <article id="activity-marseille">
       <h2 id="activity-title">Activités à Marseille</h2>
 
       <div class="activity-single activity-mobile">
         <a href="">
           <img
             id="img-port"
-            src="activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            src="../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
             alt="Photo du Vieux port"
           />
           <p>Vieux port</p>
@@ -314,7 +314,7 @@
           <a href="">
             <img
               id="img-fort"
-              src="activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+              src="../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               alt="Photo du Fort de Pomègues"
             />
             <p>Fort de Pomègues</p>
@@ -325,7 +325,7 @@
           <a href="">
             <img
               id="img-frioul"
-              src="activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+              src="../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
               alt="Photo des Îles du Frioul"
             />
             <p>Îles du Frioul</p>
@@ -337,7 +337,7 @@
         <a href="">
           <img
             id="img-calanques"
-            src="activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+            src="../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
             alt="Photo du Parc National des Calanques"
           />
           <p>Parc National des Calanques</p>
@@ -349,7 +349,7 @@
           <a href="">
             <img
               id="img-garde"
-              src="activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              src="../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
               alt="Photo de Notre-Dame-de-la-Garde"
             />
             <p>Notre-Dame-de-la-Garde</p>
@@ -360,14 +360,14 @@
           <a href="">
             <img
               id="img-longchamp"
-              src="activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+              src="../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
               alt="Photo du Parc Longchamp"
             />
             <p>Parc Longchamp</p>
           </a>
         </div>
       </div>
-    </aside>
+    </article>
 
     <!-- Pied de page -->
     <footer>
